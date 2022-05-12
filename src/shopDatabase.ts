@@ -7,3 +7,5 @@ const shops: Shop[] = [
   { id: 444, name: "Sylvester's Shoes", rating: 3.8 },
   { id: 555, name: "Teddy's Tunes", rating: 4.7 },
 ];
+
+export default shops;

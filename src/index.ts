@@ -3,6 +3,7 @@ import express from "express";
 
 // require the cors module
 import cors from "cors";
+import shopRouter from "./routes/shopRouter";
 
 // creates an instance of an Express server
 const app = express();
@@ -12,6 +13,7 @@ app.use(cors());
 
 // allow POST and PUT requests to use JSON bodies
 app.use(express.json());
+app.use("/shops", shopRouter);
 
 // define the port
 const port = 3000;
